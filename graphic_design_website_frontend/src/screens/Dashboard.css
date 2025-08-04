@@ -1,0 +1,56 @@
+.dashboard {
+  padding: 2.5rem;
+  color: var(--text, #fff);
+}
+h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+.projects-list {
+  margin-top: 1.6rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.project-card {
+  background: var(--panel, #232528);
+  color: #fff;
+  border: 1px solid var(--border, #32323a);
+  border-radius: 11px;
+  padding: 1.3rem 1rem 1.1rem 1.2rem;
+  font-size: 1.07em;
+  text-align: left;
+  transition: background 0.15s, border 0.15s;
+  cursor: pointer;
+  position: relative;
+  min-height: 75px;
+  outline: none;
+}
+.project-card:hover {
+  border: 1.5px solid var(--accent, #fdcb6e);
+  background: var(--sidebar, #353741);
+  color: var(--accent, #fdcb6e);
+}
+.project-updated {
+  font-size: 0.96em;
+  color: var(--text-secondary, #adb5bd);
+  margin-top: 0.35em;
+}
+.accent-btn {
+  background: var(--accent, #fdcb6e);
+  color: var(--primary, #2d3436);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.09em;
+  padding: 0.5rem 1.3rem;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+}
+.accent-btn:hover {
+  opacity: 0.82;
+}
+.empty {
+  color: var(--text-secondary, #aaa);
+  margin: 2rem;
+}

@@ -1,0 +1,77 @@
+.sidebar {
+  width: 220px;
+  min-width: 60px;
+  background: var(--sidebar, #232528);
+  border-right: 1.5px solid var(--border, #32323a);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 100;
+  transition: width 0.25s;
+}
+
+.sidebar-header {
+  width: 100%;
+  color: var(--accent, #fdcb6e);
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 1.2rem .7rem 1.2rem;
+  user-select: none;
+}
+.sidebar-logo {
+  font-family: "JetBrains Mono", monospace;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-item {
+  width: 100%;
+  font-size: 1.16rem;
+  text-align: left;
+  background: none;
+  color: var(--text, #fff);
+  border: none;
+  padding: 0.95rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+  transition: background 0.18s, color 0.18s, border-left 0.18s;
+}
+.sidebar-item:hover,
+.sidebar-item.active {
+  background: var(--panel, #242528);
+  color: var(--accent, #fdcb6e);
+  border-left: 4px solid var(--accent, #fdcb6e);
+}
+.sidebar-icon {
+  font-size: 1.26em;
+}
+
+@media (max-width: 950px) {
+  .sidebar {
+    width: 56px;
+    min-width: 56px;
+  }
+  .sidebar-header {
+    font-size: 1.06rem;
+    justify-content: center;
+    padding: 1.3rem .7rem .5rem .7rem;
+  }
+  .sidebar-item {
+    font-size: 0.98rem;
+    padding: .7rem .6rem;
+    justify-content: center;
+  }
+  .sidebar-item span:not(.sidebar-icon) {
+    display: none;
+  }
+}

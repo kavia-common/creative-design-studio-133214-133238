@@ -1,0 +1,36 @@
+.template-gallery {
+  padding: 2.5rem;
+  color: var(--text, #fff);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5em;
+  margin-top: 1.6rem;
+}
+
+.template-tile {
+  background: var(--panel, #232528);
+  border: 1.1px solid var(--border, #32323a);
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1.13em;
+  padding: 2.4rem 1rem 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 120px;
+  cursor: pointer;
+  transition: border 0.15s, background 0.15s, color 0.18s;
+  outline: none;
+}
+.template-tile:hover {
+  border: 1.8px solid var(--accent, #fdcb6e);
+  background: var(--sidebar, #353741);
+  color: var(--accent, #fdcb6e);
+}
+.thumb {
+  font-size: 2.3em;
+  margin-bottom: 0.65em;
+}
